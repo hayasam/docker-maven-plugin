@@ -34,7 +34,7 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.version>3.3.9</maven.version>
+    <maven.version>3.8.1</maven.version>
     <jmockit.version>1.43</jmockit.version>
     <surefire.version>3.0.0-M2</surefire.version>
   </properties>
@@ -143,7 +143,7 @@
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
       <artifactId>maven-assembly-plugin</artifactId>
-      <version>3.1.0</version>
+      <version>3.6.0</version>
       <exclusions>
         <exclusion>
           <groupId>org.apache.maven</groupId>
@@ -379,10 +379,10 @@
             <sourceDirectory>src/main/asciidoc</sourceDirectory>
             <attributes>
               <icons>font</icons>
-              <pagenums />
+              <pagenums/>
               <version>${project.version}</version>
-              <toc />
-                <idprefix />
+              <toc/>
+                <idprefix/>
               <idseparator>-</idseparator>
             </attributes>
           </configuration>
