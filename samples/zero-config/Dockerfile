@@ -1,4 +1,4 @@
-FROM openjdk:jre
+FROM openjdk:11.0.15-jre
 
 ARG version=1-SNAPSHOT
 ARG jar_file=target/zero-config-$version.jar
