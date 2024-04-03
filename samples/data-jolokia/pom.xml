@@ -73,7 +73,7 @@
     <dependency>
       <groupId>com.jayway.restassured</groupId>
       <artifactId>rest-assured</artifactId>
-      <version>2.3.1</version>
+      <version>2.5.0</version>
     </dependency>
   </dependencies>
 
@@ -106,7 +106,7 @@
                   <CATALINA_OPTS>-Xmx32m</CATALINA_OPTS>
                   <!-- Base starts jolokia by default. With this, it can be disabled -->
                   <JOLOKIA_OFF>1</JOLOKIA_OFF>
-                  <EMPTY_PROP></EMPTY_PROP>
+                  <EMPTY_PROP/>
                 </env>
                 <envPropertyFile>${project.basedir}/src/main/docker/environment.properties</envPropertyFile>
                 <ports>
@@ -309,9 +309,7 @@
                     <from>${image}</from>
                     <assembly>
                       <mode>dir</mode>
-                      <inline xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                              xmlns="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.2"
-                              xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.2 http://maven.apache.org/xsd/assembly-1.1.2.xsd">
+                      <inline xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.2" xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.2 http://maven.apache.org/xsd/assembly-1.1.2.xsd">
                         <id>jolokia-it</id>
 
                         <dependencySets>
