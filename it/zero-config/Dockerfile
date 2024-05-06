@@ -1,4 +1,4 @@
-FROM openjdk:jre
+FROM openjdk:11.0.15-jre
 
 #RUN VERSION=$(mvn -q -Dexec.executable=echo -Dexec.args='${project.version}' --non-recursive exec:exec)
 ARG jar_file=target/zero-config-${project.version}.jar
