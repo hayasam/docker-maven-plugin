@@ -1,4 +1,4 @@
-FROM openjdk:jre
+FROM openjdk:11.0.15-jre
 
 ADD target/${project.build.finalName}.jar /opt/hello-world.jar
 ADD target/docker-extra/run-java/run-java.sh /opt
